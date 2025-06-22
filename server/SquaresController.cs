@@ -66,24 +66,7 @@ public class SquareController : ControllerBase
     }
   }
 
-  // Get the most recently added square.
-  [HttpGet("last")]
-  public IActionResult GetLast()
-  {
-    try
-    {
-      var squares = LoadSquares();
-      if (squares.Count == 0)
-        return NotFound("No squares available.");
 
-      var last = squares[^1]; // Last item in list
-      return Ok(last);
-    }
-    catch (Exception ex)
-    {
-      return StatusCode(500, $"Error while fetching last square: {ex.Message}");
-    }
-  }
 
   // Load all squares from file. If file does not exist, return empty list.
   private List<Square> LoadSquares()

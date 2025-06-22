@@ -19,7 +19,7 @@ var app = builder.Build();
 // Enable CORS for frontend requests
 app.UseCors("AllowFrontend");
 
-// Automatically map all controllers like SquareController
+// Automatically map all controllers in SquareController
 app.MapControllers();
 
 // Run the application

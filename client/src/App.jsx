@@ -201,7 +201,11 @@ function App() {
       <div className="fixed top-4 right-4 flex items-center gap-2 p-2 bg-gray-800 rounded-md shadow-md">
         <div className={`w-4 h-4 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`}></div>
         <span className="text-white text-sm font-bold">
-          {isConnected ? 'Connected' : 'No Connection To Server do not refresh the page'}
+          {isConnected ? 'Connected' :
+            <>
+            No Connection To Server – do not refresh the page<br />
+            Unsynced squares are shown with a red border
+          </>}
         </span>
         {isSyncing && (
           <div className="fixed top-4 left-4 p-2 bg-yellow-500 text-white font-bold rounded-md shadow-md animate-pulse">
