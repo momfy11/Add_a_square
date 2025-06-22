@@ -69,9 +69,8 @@ All API calls are made via the base URL:
 
 All data is handled in JSON format. Each square must contain a unique `id` and a `color`.
 
+---
 ## 📁 Project Structure
-```
-
 ```
 SquaresProject/
 │
@@ -93,9 +92,7 @@ SquaresProject/
 │   ├── vite.config.js
 │   └── package.json
 ```
-
 ---
-
 ## 📦 Installed NPM Packages
 
 - `react`
