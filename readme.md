@@ -56,7 +56,21 @@ Frontend will run at:
 
 ---
 
+## 📡 API Endpoints
+
+All API calls are made via the base URL:  
+`http://localhost:5000/api/square`
+
+| Method | Endpoint             | Description                           |
+|--------|----------------------|---------------------------------------|
+| GET    | `/api/square`        | Returns all saved squares             |
+| POST   | `/api/square`        | Adds one or more new squares          |
+| DELETE | `/api/square/reset`  | Deletes all saved squares             |
+
+All data is handled in JSON format. Each square must contain a unique `id` and a `color`.
+
 ## 📁 Project Structure
+```
 
 ```
 SquaresProject/
